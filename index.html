@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<title>MathQuiz | Ariharasudhan</title>
+	<style type="text/css">
+		.header {
+			margin: 1em 0 1em 0; 
+			border-bottom: 5px solid orange;
+		}
+		.header img {
+			margin: 1em 0.1em 1em 1em;
+			border: 5px solid orange;
+		}
+		#title1 {
+			display: flex;
+			font-size: 10em;
+			color: white;
+		}
+		#letter-m , #letter-q{
+			font-weight: bold;
+			color: orange;
+		}
+		button {
+			font-weight: bold;
+			font-size: 5vw !important;
+		}
+		.resbut {
+			width: 100%;
+			height: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 10vh;
+		}
+		.result {
+			background-color: orange;
+			border-radius: 10px;
+			box-shadow: 0.2em 0.2em 10px rgba(0,0,0,0.2);
+			width: 80%;
+			height: auto;
+			min-height: 50vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 5rem;
+			font-weight: bold;
+			color: blue;
+		}
+		body {
+			background-color: darkblue;
+		}
+		#monk2 {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+		}
+		#monk1 {
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			padding-right: 3em;
+		}
+	</style>
+</head>
+<body class="bg-blue-800">
+	<div class="header flex flex-row justify-start items-center gap-x-10">
+		<img src="./statics/ari.jpg" alt="Author-ARI" width="20%" height="auto" style="border-radius: 50%">
+		<span id="title1"><span id="letter-m">M</span>ath<span id="letter-q">Q</span>uiz</span>
+	</div>
+	<div class="resbut flex flex-col justify-evenly">
+	<img src="./statics/monk.gif" alt="monkey" id="monk1">
+	<img src="./statics/monk.gif" alt="monkey" id="monk2">
+		<div class="result my-10">
+			<h1 id="result"></h1>
+		</div>
+	    <button type="button" onclick="All()" class="inline-block px-6 py-2 border-4 border-yellow-500 text-yellow-500 font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">START</button>
+	</div>
+	<script type="text/javascript" src="mathquiz.js"></script>
+</body>
+</html>
